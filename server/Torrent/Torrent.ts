@@ -14,6 +14,7 @@ export class Torrent extends EventEmitter {
     private filePaths: Array<any>;
     private dirStructure: Array<Dir>;
     private interval;
+    private emit;
 
     constructor(magnet: string, folderPath: string, uniqid: string) {
         super();
